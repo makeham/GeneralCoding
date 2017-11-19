@@ -17,7 +17,7 @@
 
 - cd
 - cd /c
-- ls (lists all items)
+- ls (lists all folder items on c: drive)
 - cd git
 
 - set user permissions
@@ -32,7 +32,7 @@
 - git status (check for modified files)
 - git add test.txt (add a file to the staging environment)
 - git status (see files ready to commit)
-- git commit -m "message here" (commit all files or type an individual file name after the quotes)
+- git commit -m "message here" (commit all files or type an individual file name after the quotes to commit just one)
 - git push -u origin master (pushes commited files to the master on github)
 
 
