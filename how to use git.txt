@@ -1,4 +1,37 @@
-##How to use Github gui interface##
+## basic commands ##
+
+- git init //creates local git repository in the folder you've navigated to
+- git add index.html //adds index.html file to the staging area
+- git rm --cached index.html //removes index.html from the staging area and makes the file untracked
+- git add *.html //adds any html files to the staging area
+- git add . //adds all files to the staging area
+- git status //checks status of the working tree
+- git commit -m "some message you'd like to add" //commits changes in the index directory
+- git push //push to remote repository
+- git pull //pull latest files from remote repository
+
+
+## creating files ##
+
+- touch index.html //creates an index.html file
+- touch app.js //creates a app.js file
+- touch .gitignore //creates a git file used to list files you don't want to add, example log.txt or a folder directory /dir2
+
+
+## creating a branch ##
+
+- git branch andy //creates a branch called andy
+- git checkout andy //moves from master to the the branch
+- touch hello.html //creates a file called hello.html in the andy branch
+- git checkout master //moves back to the master branch
+
+
+## merging branch files whilst in the master branch ##
+
+- git merge andy //merges the content from the 'andy' branch with the 'master' branch
+
+
+## How to use Github gui interface ##
 
 - If you wish to modify a file/document in the master directory click 'branch master' give it a name and 'create branch'.
 - You are now working in the branch directory
@@ -11,30 +44,30 @@
 - Click 'merge pull request' to add to the master document and 'confirm merge'
 - Now delete the branch to be left with just the original document in the master
 
-##How to use gitBash to send files to gitHub ##
 
-- create a local folder called git and use gitbash to link to it
 
-- cd
-- cd /c
-- ls (lists all folder items on c: drive)
-- cd git
+## How to use gitBash to send files to gitHub ##
 
 - set user permissions
 
 - git config --global user.name "makeham"
 - git config --global user.email andy.makeham@yahoo.com
-- git clone https://github.com/makeham/GeneralCoding.git (this is the github directory)
 
-- cd (select repository folder)
-- ls (see the files on your local respository)
+- git remote //list remote repositories (none if not setup)
+- git remote add origin https://github.com/makeham/GeneralCoding.git //this is the github directory
+- git remote //shows the origin repository
+- git push -u origin master //pushes commited files to the master on github
+- //login to gitHub via the popup interface
+- touch README.md //create a readme file. Type a header #some text here then line break and add message
 
-- git status (check for modified files)
-- git add test.txt (add a file to the staging environment)
-- git status (see files ready to commit)
-- git commit -m "message here" (commit all files or type an individual file name after the quotes to commit just one)
-- git push -u origin master (pushes commited files to the master on github)
 
+## create a local folder called git and clone a repository from github ##
+
+- cd
+- cd /c
+- ls //lists all folder items on c: drive
+- cd git
+- git clone https://github.com/makeham/GeneralCoding.git
 
 
 
