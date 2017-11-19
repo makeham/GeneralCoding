@@ -1,0 +1,13 @@
+##How to use Github gui interface##
+
+- If you wish to modify a file/document in the master directory click 'branch master' give it a name and 'create branch'.
+- You are now working in the branch directory
+- Select the file/document you want to modify and edit the document
+- Click 'Commit changes'
+- Click 'Pull requests'
+- Click 'new pull request'
+- Select the file/document you want to compare/review
+- Review file and click 'Create pull request' leave notes if necessary
+- Click 'merge pull request' to add to the master document and 'confirm merge'
+- Now delete the branch to be left with just the original document in the master
+
