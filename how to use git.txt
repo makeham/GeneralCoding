@@ -9,6 +9,30 @@
 - Select the file/document you want to compare/review
 - Review file and click 'Create pull request' leave notes if necessary
 - Click 'merge pull request' to add to the master document and 'confirm merge'
-- Now delete the branch to be left with just the original document in the masterls
+- Now delete the branch to be left with just the original document in the master
+
+##How to use gitBash ##
+
+- create a local folder called git and use gitbash to link to it
+
+- cd
+- cd /c
+- ls (lists all items)
+- cd git
+
+- git config --global user.name "makeham"
+- git config --global user.email andy.makeham@yahoo.com
+- git clone https://github.com/makeham/GeneralCoding.git
+
+- cd (select repository folder)
+- ls (see the files on your local respository)
+
+- git add test.txt
+- git status
+- git commit -m "message here" (add file name optional)
+- git push -u origin master
+
+
+
 
 
