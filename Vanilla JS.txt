@@ -1,10 +1,10 @@
 Using Vanilla JS
 
-console.dir(document) //displays document elelments that you can select
+console.dir(document) //displays document elelments that you can select in a html document
 console.log(document.all); //displays dom tree for this page
-console.log(document.head); //displays head
+console.log(document.head); //displays head element
 console.log(document.all[10]); //selects 10th dom tree item
-document.head.textContent = "Hello"; //changes head title content
+document.head.textContent = "Hello"; //changes head title content to Hello
 console.log(document.forms) //display all the forms
 console.log(document.forms[0]) //displays first form
 console.log(document.links) //displays all the links
@@ -17,6 +17,7 @@ var headerTitle = document.getElementById('header-title'); //stores header id in
 console.log(headerTitle); //displays header #header-title in console
 headerTitle.textContent = 'hello'; //changes content to hello
 headerTitle.innerText = 'Goodbye'; //changes content to goodbye
+
 textContent will overide any span or style elements 
 innerText will read any style changes set to the element
 
@@ -58,8 +59,8 @@ li[i].style.backgroundColor = 'green';
 
 ##query selector##
 
-var header = document.querySelector('.header'); //select any element like you would in jQuery
-header.style.borderBottom ='solid 4px #c00'; //changes the header element border to grey]
+var header = document.querySelector('.header'); //select any element, like you would in jQuery
+header.style.borderBottom ='solid 4px #c00'; //changes the header element border to grey
 
 var input = document.querySelector('input'); //selects the input element
 input.value = 'hello world'; //changes the value to hello world
