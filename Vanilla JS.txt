@@ -24,9 +24,9 @@ example--
 
 <div id="#headerTitle">Hello <span style="display:none">this is some content</span></div>
 console.log(headerTitle.innerText); // displays Hello but disregards the span element
-console.log(document.TextContent); //displays Goodbye this is some text
+console.log(document.TextContent); //displays Hello this is some text
 
-headerTitle.innerHTML = "<h3>this is some text</h3>'; //this will add the following code within the element <h3>this is some text</h3>
+headerTitle.innerHTML = "<h3>this is some text</h3>'; //this will add the following code within the element - <h3>this is some text</h3>
 
 var mainHeader = 'document.getElementByID('main-header');
 mainHeader.style.borderBottom = 'solid 3px #000'; //adds 3px black border style to element
