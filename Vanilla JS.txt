@@ -1,0 +1,96 @@
+Using Vanilla JS
+
+console.dir(document) //displays document elelments that you can select
+console.log(document.all); //displays dom tree for this page
+console.log(document.head); //displays head
+console.log(document.all[10]); //selects 10th dom tree item
+document.head.textContent = "Hello"; //changes head title content
+console.log(document.forms) //display all the forms
+console.log(document.forms[0]) //displays first form
+console.log(document.links) //displays all the links
+console.log(document.images) //display images
+
+##selectors -getElementById##
+
+console.log(document.getElementById('header-title')); //selects #header-title
+var headerTitle = document.getElementById('header-title'); //stores header id in the variable headerTitle
+console.log(headerTitle); //displays header #header-title in console
+headerTitle.textContent = 'hello'; //changes content to hello
+headerTitle.innerText = 'Goodbye'; //changes content to goodbye
+textContent will overide any span or style elements 
+innerText will read any style changes set to the element
+
+example--
+
+<div id="#headerTitle">Hello <span style="display:none">this is some content</span></div>
+console.log(headerTitle.innerText); // displays Hello but disregards the span element
+console.log(document.TextContent); //displays Goodbye this is some text
+
+headerTitle.innerHTML = "<h3>this is some text</h3>'; //this will add the following code within the element <h3>this is some text</h3>
+
+var mainHeader = 'document.getElementByID('main-header');
+mainHeader.style.borderBottom = 'solid 3px #000'; //adds 3px black border style to element
+
+
+##selectors -getElementsByClassName##
+
+var items = document.getElementsByClassName('list-group-items');
+console.log(items); //displays all items with that class
+console.log(items[1]); //displays the 2nd class item in the list
+items[1].textContent = 'hello 2' //changes the copy in the 2nd class item to hello 2
+items[1].style.fontWeight = 'bold'; //changes the font weight in the 2nd class item to bold
+items[1].style.backgroundColor = '#c00'; changes the background color to red
+
+Applying the same style to all class elements needs to be done with a for loop
+
+for (var i = 0; i < items.length; i++){
+items[i].style.backgroundColor = '#ccc'; //this will apply a grey background color on every list-group-items
+}
+
+##selectors - getElementsByTagName##
+
+var li = getElementByTagName('li'); /stores li elements in a variable
+console.log(li[1]); //displays the 2nd li element in the console
+
+for (var i = 0; i < li.length; i++){
+li[i].style.backgroundColor = 'green';
+}
+
+##query selector##
+
+var header = document.querySelector('.header'); //select any element like you would in jQuery
+header.style.borderBottom ='solid 4px #c00'; //changes the header element border to grey]
+
+var input = document.querySelector('input'); //selects the input element
+input.value = 'hello world'; //changes the value to hello world
+
+var submit = document.querySelector('input[type="submit"]'); //selects the input element with the type of submit
+submit.value = "save"; //changes the submit value to save
+
+var item = document.querySelector('.list-group-item');
+item.style.color = "red";
+
+var lastItem = document.querySelector('.list-group-item:last-child');
+lastItem.style.backgroundColor = '#000;
+
+var secondItem = document.querySelector('.list-group-item:nth-child(2)');
+secondItem.style.backgroundColor = '#c00;
+
+##query selector all##
+
+var titles = document.querySelectorAll('.title');
+console.log(titles); //will display a node list
+titles[0].textContent = "hello"; //will change the text content of the first title to hello
+
+
+var odd = document.querySelectorAll('li:nth-child(odd)');
+var even = document.querySelectorAll('li:nth-child(even)');
+
+for (var i = 0; i < odd.length; i++){
+odd[i].style.backgroundColor = '#ccc';
+even[i].style.backgroundColor = '#c00';
+}
+
+
+
+
