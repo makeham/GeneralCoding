@@ -24,7 +24,7 @@ alert(colors[3]); //this will show the color purple
 var numbers = [3, 5, 17, 21]; //numbers array
 alert(numbers[0] + numbers[2]); //20
 
-alert(numbers.length); //will list the numbers in a array
+alert(numbers.length); //will list the total amount of numbers in the array
 alert(numbers.sort()); //will sort the numbers by value
 alert(numbers.reverse()); //will sort the numbers decending
 
