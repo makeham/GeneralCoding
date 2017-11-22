@@ -4,9 +4,9 @@ var number1 = 35;
 var number2 = 40;
 alert(number1+number2); //75
 
-var number1 = "35";
+var number1 = 35;
 var number2 = "40";
-alert('My favourite number is '+number1); //35
+alert('My favourite number is '+number1); //35 displayed as a number
 
 //allways begin varibles with a letter, _, or $ sign. Theya are case sensitive
 
@@ -26,7 +26,7 @@ alert(numbers[0] + numbers[2]); //20
 
 alert(numbers.length); //will list the numbers in a array
 alert(numbers.sort()); //will sort the numbers by value
-alert(numbers.reserve()); //will sort the numbers decending
+alert(numbers.reverse()); //will sort the numbers decending
 
 ##Loops##
 
