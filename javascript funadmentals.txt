@@ -8,7 +8,7 @@ var number1 = 35;
 var number2 = "40";
 alert('My favourite number is '+number1); //35 displayed as a number
 
-//allways begin varibles with a letter, _, or $ sign. Theya are case sensitive
+//allways begin varibles with a letter, _, or $ sign. They are case sensitive.
 
 ##array##
 
@@ -16,7 +16,7 @@ var colors = ['red', 'blue', 'green']; //text aray
 alert(colors); //alerts an array
 alert(colors[0]); //alerts the first item in the array
 
-var colors = new Array('red', 'yellow', 'orange');
+var colors = new Array('red', 'yellow', 'orange'); //to overwrite the existing array with new content.
 
 colors.push('purple'); //using dot syntax you are adding a color to the array. This will appear at the end of the array
 alert(colors[3]); //this will show the color purple
@@ -39,7 +39,7 @@ console.log("I love the number" +i); //this will add the string and the loop num
 
 -while loop //same as a for loop but declaring the varible outside the loop
 
-var 1 =0
+var 1 = 0;
 while(i < 10){
 console.log(i);
 i++;
