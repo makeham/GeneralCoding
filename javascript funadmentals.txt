@@ -1,0 +1,65 @@
+javascript fundamentals
+
+var number1 = 35;
+var number2 = 40;
+alert(number1+number2); //75
+
+var number1 = "35";
+var number2 = "40";
+alert('My favourite number is '+number1); //35
+
+//allways begin varibles with a letter, _, or $ sign. Theya are case sensitive
+
+##array##
+
+var colors = ['red', 'blue', 'green']; //text aray
+alert(colors); //alerts an array
+alert(colors[0]); //alerts the first item in the array
+
+var colors = new Array('red', 'yellow', 'orange');
+
+colors.push('purple'); //using dot syntax you are adding a color to the array. This will appear at the end of the array
+alert(colors[3]); //this will show the color purple
+
+var numbers = [3, 5, 17, 21]; //numbers array
+alert(numbers[0] + numbers[2]); //20
+
+alert(numbers.length); //will list the numbers in a array
+alert(numbers.sort()); //will sort the numbers by value
+alert(numbers.reserve()); //will sort the numbers decending
+
+##Loops##
+
+-for loop // an iteration of any array
+
+for(var i = 0; i < 10; i++){
+console.log(i); //will add to 10
+console.log("I love the number" +i); //this will add the string and the loop number
+}
+
+-while loop //same as a for loop but declaring the varible outside the loop
+
+var 1 =0
+while(i < 10){
+console.log(i);
+i++;
+}
+
+
+##Conditionals##
+
+-if statement
+
+== //equal to
+=== //equal to, must both be strings or numbers
+
+
+var var1 = 3;
+var var2 = 4;
+
+if(var1 == var2){
+console.log('this is true');
+}
+
+
+
