@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix:after {
+    display: table;
+    clear: both;
+    content: "";
+}
+
+#splitHolder {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    background-color: #333;
+    align-items: stretch;
+    align-content: center;
+}
+
+#navHolder {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+#copyHolder {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    background-color: red;
+    align-items: center;
+    align-content: center;
+    min-height:100vh;
+}
+
+#copyCont {
+    max-height:100vh;
+    margin:20px;
+}
+
+
+
+
+#navHolder img {
+    height: 50px;
+    width: 50px;
+}
+
+#leftNav {
+    order: 0;
+    flex-grow: 1;
+    align-self: center;
+}
+
+#mainCont {
+    order: 1;
+    flex-grow: 25;
+    align-self: center;
+}
