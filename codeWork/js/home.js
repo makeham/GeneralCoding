@@ -4,13 +4,13 @@
           var copyCont = document.getElementById("copyCont");
           var copyHeight = document.getElementById("copyCont").scrollHeight;
           if (copyHeight > myWindowHeight) {
-              copyCont.style.backgroundColor = "#ccc";
               copyCont.style.overflowY = "scroll";
-              copyCont.style.margin = "0";
+              copyCont.style.margin = "0 0 0 20px";
+              copyCont.style.padding = "0 20px 0 0";
           } else {
-              copyCont.style.backgroundColor = "inherit";
               copyCont.style.overflowY = "hidden";
               copyCont.style.margin = "20px";
+              copyCont.style.padding = "0";
           }
       });
 
@@ -20,15 +20,15 @@
           var copyCont = document.getElementById("copyCont");
           var copyHeight = document.getElementById("copyCont").scrollHeight;
           if (copyHeight > myWindowHeight) {
-              copyCont.style.backgroundColor = "#ccc";
               copyCont.style.overflowY = "scroll";
-              copyCont.style.margin = "0";
+              copyCont.style.margin = "0 0 0 20px";
+              copyCont.style.padding = "0 20px 0 0";
           } else {
-              copyCont.style.backgroundColor = "inherit";
               copyCont.style.overflowY = "hidden";
               copyCont.style.margin = "20px";
+              copyCont.style.padding = "0";
           }
       };
 
-//addEventListner and onload functions can be combined in jQuery and written as follows
-//$(window).on('load resize' function(){}):
+      //addEventListner and onload functions can be combined in jQuery and written as follows
+      //$(window).on('load resize' function(){}):
